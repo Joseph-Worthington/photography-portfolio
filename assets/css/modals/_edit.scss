@@ -1,0 +1,13 @@
+.edit-image{
+    position: fixed;
+    opacity: 0;
+    z-index: -1;
+    background-color: rgba($secondary,  0.5);
+    height: 100vh;
+    width: 100%;
+
+    &.open{
+        opacity: 1;
+        z-index: 10;
+    }
+}

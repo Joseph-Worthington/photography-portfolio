@@ -1,0 +1,27 @@
+*{
+    font-size: 16px;
+    transition: all linear 0.5s;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.container{
+    max-width: 1640px;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+body{
+    background-color: $secondary;
+
+    &.mobile-menu-active{
+        overflow: hidden;
+    }
+}
+
+img{
+    max-width: 100%;
+}

@@ -1,0 +1,44 @@
+.portfolio-block{
+    background-color: $primary;
+
+    .portfolio-card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        min-height: 50vh;
+        color: $secondary;
+        padding: 20px 0;
+
+        h2{
+            color: $secondary;
+        }
+
+        .content{
+            max-width: 500px;
+
+            
+        }
+
+        .portfolio-block-image{
+            background-image: url('../../assets/imgs/portfolio-images/IMAGE\ \(1\).jpg');
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}
+
+.cta-block{
+    min-height: 20vh;
+    padding-bottom: 2rem;
+}
+
+@media(max-width: 768px){
+    .portfolio-block{
+        .portfolio-card{
+            grid-template-columns: 1fr;
+            .portfolio-block-image{
+                margin-top: 2rem;
+                padding: 40%;
+            }
+        }
+    }
+}

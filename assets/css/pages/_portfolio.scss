@@ -1,0 +1,98 @@
+.portfolio{
+    z-index: 1;
+    margin:5rem 0;
+    min-height: 80vh;
+    .portfolio-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem;
+
+        .edit-options{
+            display: flex;
+            gap: 1rem;
+        }
+    }
+    .portfolio-hero{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 2rem;
+        ul{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+    }
+
+    .image-upload{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 500px;
+        margin: 0 auto 2rem;
+        .checkbox{
+            max-width: 150px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        fieldset{
+            border: 1px solid rgba($primary, 0.5);
+            padding: 2rem;
+
+            .checkbox{
+                margin: 1rem 0;
+            }
+
+            button{
+                margin: 1rem 0;
+            }
+        }
+
+        input{
+            display: block;
+        }
+
+        input[type=file]{
+            border: 1px solid $primary;
+            padding: 1rem 0.5rem;
+        }
+    }
+
+    
+}
+
+@media(max-width: 1200px){
+    .portfolio{
+        .portfolio-grid{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+@media(max-width: 992px){
+    .portfolio{
+        .portfolio-grid{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .image-upload fieldset{
+            padding: 1rem;
+        }
+    }
+}
+@media(max-width: 768px){
+    .portfolio{
+
+        .portfolio-hero{
+            ul{
+                justify-content: stretch;
+            }
+        }
+        .portfolio-grid{
+            grid-template-columns: repeat(1, 1fr);
+
+            
+        }
+    }
+}
